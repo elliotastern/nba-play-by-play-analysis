@@ -1,0 +1,564 @@
+NUMBER,PLAYER,,POS,HEIGHT,WEIGHT,BIRTH_DATE,NATIONALITY,EXPERIENCE,COLLEGE
+50,Aaron Gordon,Aaron Gordon,PF,8-Jun,235,9/16/95,US,6,Arizona
+3,Aaron Holiday,Aaron Holiday,PG,Jun-00,185,9/30/96,US,2,UCLA
+26,Aaron Nesmith,Aaron Nesmith,SF,5-Jun,215,10/16/99,US,R,Vanderbilt
+11,Abdel Nader,Abdel Nader,SF,5-Jun,225,9/25/93,EG,3,"Northern Illinois, Iowa State"
+20,Adam Mokoka,Adam Mokoka,SG,4-Jun,190,7/18/98,FR,1,
+5,Al-Farouq Aminu,Al-Farouq Aminu,PF,8-Jun,220,9/21/90,US,10,Wake Forest
+18,Alec Burks,Alec Burks,SG,6-Jun,214,7/20/91,US,9,Colorado
+17,Aleksej Pokusevski,Aleksej Pokusevski,PF,Jul-00,190,12/26/01,RS,R,
+6,Alen Smailagic,Alen Smailagic,PF,10-Jun,215,8/18/00,RS,1,
+4,Alex Caruso,Alex Caruso,PG,4-Jun,186,2/28/94,US,3,Texas A&M
+27,Alex Len,Alex Len,C,Jul-00,250,6/16/93,UA,7,Maryland
+28,Alfonzo McKinnie,Alfonzo McKinnie,SF,7-Jun,215,9/17/92,US,3,Green Bay
+24,Alize Johnson,Alize Johnson,PF,7-Jun,212,4/22/96,US,2,Missouri State
+37,Amida Brimah,Amida Brimah,C,10-Jun,230,2/11/94,GH,R,UConn
+7,Amir Coffey,Amir Coffey,SG,7-Jun,210,6/17/97,US,1,Minnesota
+2,Andre Drummond,Andre Drummond,C,10-Jun,279,8/10/93,US,8,UConn
+28,Andre Iguodala,Andre Iguodala,SF,6-Jun,215,1/28/84,US,16,Arizona
+22,Andrew Wiggins,Andrew Wiggins,PF,7-Jun,197,2/23/95,CA,6,Kansas
+1,Anfernee Simons,Anfernee Simons,SG,3-Jun,181,6/8/99,US,2,
+3,Anthony Davis,Anthony Davis,PF,10-Jun,253,3/11/93,US,8,Kentucky
+1,Anthony Edwards,Anthony Edwards,SG,4-Jun,225,8/5/01,US,R,Georgia
+16,Anthony Gill,Anthony Gill,PF,7-Jun,230,10/17/92,US,R,"South Carolina, Virginia"
+33,Anthony Lamb,Anthony Lamb,SF,6-Jun,227,1/20/98,US,R,University of Vermont
+43,Anthony Tolliver,Anthony Tolliver,PF,8-Jun,240,6/1/85,US,12,Creighton
+7,Armoni Brooks,Armoni Brooks,SG,3-Jun,195,6/5/98,US,R,Houston
+46,Aron Baynes,Aron Baynes,C,10-Jun,260,12/9/86,NZ,8,Washington State
+25,Austin Rivers,Austin Rivers,SG,4-Jun,200,8/1/92,US,8,Duke
+9,Avery Bradley,Avery Bradley,SG,3-Jun,180,11/26/90,US,10,Texas
+66,Axel Toupane,Axel Toupane,SF,7-Jun,197,7/23/92,FR,2,
+13,Bam Adebayo,Bam Adebayo,C,9-Jun,255,7/18/97,US,3,Kentucky
+7,Ben McLemore,Ben McLemore,SG,3-Jun,195,2/11/93,US,7,Kansas
+25,Ben Simmons,Ben Simmons,PG,11-Jun,240,7/20/96,AU,3,LSU
+2,Blake Griffin,Blake Griffin,PF,9-Jun,250,3/16/89,US,10,Oklahoma
+51,Boban Marjanovic,Boban Marjanovic,C,4-Jul,290,8/15/88,RS,5,
+9,Bobby Portis,Bobby Portis,C,10-Jun,250,2/10/95,US,5,Arkansas
+13,Bogdan Bogdanović,Bogdan Bogdanović,SG,6-Jun,220,8/18/92,RS,3,
+44,Bojan Bogdanovic,Bojan Bogdanovic,SF,7-Jun,226,4/18/89,BA,6,
+10,Bol Bol,Bol Bol,PF,2-Jul,220,11/16/99,SD,1,Oregon
+3,Bradley Beal,Bradley Beal,SG,3-Jun,207,6/28/93,US,8,Florida
+15,Brandon Clarke,Brandon Clarke,PF,8-Jun,215,9/19/96,CA,1,"San Jose State, Gonzaga"
+0,Brandon Goodwin,Brandon Goodwin,PG,Jun-00,180,10/2/95,US,2,"Central Florida, Florida Gulf Coast"
+14,Brandon Ingram,Brandon Ingram,SF,8-Jun,190,9/2/97,US,4,Duke
+33,Brodric Thomas,Brodric Thomas,SG,5-Jun,185,1/28/97,US,R,Truman State University
+11,Brook Lopez,Brook Lopez,C,Jul-00,282,4/1/88,US,12,Stanford
+1,Bruce Brown,Bruce Brown,PG,4-Jun,202,8/15/96,US,2,Miami (FL)
+24,Bruno Fernando,Bruno Fernando,C,9-Jun,240,8/15/98,AO,1,Maryland
+7,Bryn Forbes,Bryn Forbes,SG,2-Jun,205,7/23/93,US,4,Michigan State
+24,Buddy Hield,Buddy Hield,SG,4-Jun,220,12/17/92,BS,4,Oklahoma
+,Caleb Homesley,Caleb Homesley,G,6-Jun,205,11/27/96,US,R,Liberty
+22,Cam Reddish,Cam Reddish,SF,8-Jun,218,9/1/99,US,1,Duke
+23,Cameron Johnson,Cameron Johnson,PF,8-Jun,210,3/3/96,US,1,"Pitt, UNC"
+15,Cameron Payne,Cameron Payne,PG,1-Jun,183,8/8/94,US,5,Murray State
+22,Caris LeVert,Caris LeVert,SG,6-Jun,205,8/25/94,US,4,Michigan
+0,Carmelo Anthony,Carmelo Anthony,PF,7-Jun,238,5/29/84,US,17,Syracuse
+4,Carsen Edwards,Carsen Edwards,SG,11-May,200,3/12/98,US,1,Purdue
+2,Cassius Stanley,Cassius Stanley,SG,5-Jun,190,8/18/99,US,R,Duke
+5,Cassius Winston,Cassius Winston,PG,1-Jun,185,2/28/98,US,R,Michigan State
+16,Cedi Osman,Cedi Osman,SF,7-Jun,230,4/8/95,MK,3,
+1,Chandler Hutchison,Chandler Hutchison,SF,6-Jun,210,4/26/96,US,2,Boise State
+25,Chasson Randle,Chasson Randle,PG,2-Jun,185,2/5/93,US,3,Stanford
+25,Chimezie Metu,Chimezie Metu,C,9-Jun,225,3/22/97,US,2,USC
+25,Chris Boucher,Chris Boucher,C,9-Jun,200,1/11/93,LC,3,Oregon
+4,Chris Chiozza,Chris Chiozza,PG,11-May,175,11/21/95,US,2,Florida
+3,Chris Paul,Chris Paul,PG,Jun-00,175,5/6/85,US,15,Wake Forest
+35,Christian Wood,Christian Wood,C,10-Jun,214,9/27/95,US,4,UNLV
+3,Chuma Okeke,Chuma Okeke,PF,6-Jun,229,8/18/98,US,R,Auburn
+16,CJ Elleby,CJ Elleby,SF,6-Jun,200,6/16/00,US,R,Washington State
+3,CJ McCollum,CJ McCollum,SG,3-Jun,190,9/19/91,US,7,Lehigh
+15,Clint Capela,Clint Capela,C,10-Jun,240,5/18/94,CH,6,
+0,Coby White,Coby White,PG,5-Jun,195,2/16/00,US,1,UNC
+50,Cole Anthony,Cole Anthony,PG,2-Jun,185,5/15/00,US,R,UNC
+2,Collin Sexton,Collin Sexton,SG,1-Jun,190,1/4/99,US,2,Alabama
+18,Cory Joseph,Cory Joseph,PG,3-Jun,200,8/20/91,CA,9,Texas
+6,Cristiano Felicio,Cristiano Felicio,C,11-Jun,270,7/7/92,BR,5,
+14,D.J. Augustin,D.J. Augustin,PG,11-May,183,11/10/87,US,12,Texas
+0,D.J. Wilson,D.J. Wilson,PF,10-Jun,231,2/19/96,US,3,Michigan
+0,D'Angelo Russell,D'Angelo Russell,PG,4-Jun,193,2/23/96,US,5,Ohio State
+15,Damian Jones,Damian Jones,C,11-Jun,245,6/30/95,US,4,Vanderbilt
+0,Damian Lillard,Damian Lillard,PG,2-Jun,195,7/15/90,US,8,Weber State
+1,Damion Lee,Damion Lee,SG,5-Jun,210,10/21/92,US,3,"Drexel, Louisville"
+21,Damyean Dotson,Damyean Dotson,SG,5-Jun,210,5/6/94,US,3,"Oregon, Houston"
+21,Daniel Gafford,Daniel Gafford,C,10-Jun,234,10/1/98,US,1,Arkansas
+10,Daniel Oturu,Daniel Oturu,C,8-Jun,240,9/20/99,US,R,Minnesota
+27,Daniel Theis,Daniel Theis,C,8-Jun,245,4/4/92,DE,3,
+8,Danilo Gallinari,Danilo Gallinari,PF,10-Jun,233,8/8/88,IT,11,
+14,Danny Green,Danny Green,SF,6-Jun,215,6/22/87,US,11,UNC
+,Dante Exum,Dante Exum,G,5-Jun,214,7/13/95,AU,5,
+4,Danuel House,Danuel House,SF,6-Jun,220,6/7/93,US,4,Texas A&M
+,DaQuan Jeffries,Daions Jeffries,G-F,5-Jun,230,8/30/97,US,1,"Oral Roberts, Tulsa"
+20,Dario Saric,Dario Saric,C,10-Jun,225,4/8/94,HR,4,
+7,Darius Bazley,Darius Bazley,PF,8-Jun,208,6/12/00,US,1,
+10,Darius Garland,Darius Garland,PG,1-Jun,192,1/26/00,US,1,Vanderbilt
+2,David Nwaba,David Nwaba,SF,5-Jun,219,1/14/93,US,4,Cal Poly
+42,Davis Bertans,Davis Bertans,PF,10-Jun,225,11/12/92,LV,4,
+5,De'Aaron Fox,De'Aaron Fox,PG,3-Jun,185,12/20/97,US,3,Kentucky
+12,De'Andre Hunter,De'Andre Hunter,SF,8-Jun,225,12/2/97,US,1,Virginia
+0,De'Anthony Melton,De'Anthony Melton,PG,2-Jun,200,5/28/98,US,2,USC
+32,Dean Wade,Dean Wade,PF,9-Jun,228,11/20/96,US,1,Kansas State
+22,Deandre Ayton,Deandre Ayton,C,11-Jun,250,7/23/98,BS,2,Arizona
+6,DeAndre Jordan,DeAndre Jordan,C,11-Jun,265,7/21/88,US,12,Texas A&M
+95,DeAndre' Bembry,DeAndre' Bembry,SF,5-Jun,210,7/4/94,US,4,Saint Joseph's
+91,Deividas Sirvydis,Deividas Sirvydis,SG,8-Jun,190,6/10/00,LT,R,
+5,Dejounte Murray,Dejounte Murray,PG,4-Jun,180,9/19/96,US,3,Washington
+55,Delon Wright,Delon Wright,PG,5-Jun,185,4/26/92,US,5,Utah
+10,DeMar DeRozan,DeMar DeRozan,PF,6-Jun,220,8/7/89,US,11,USC
+15,DeMarcus Cousins,DeMarcus Cousins,C,10-Jun,270,8/13/90,US,9,Kentucky
+9,Deni Avdija,Deni Avdija,SF,9-Jun,210,1/3/01,IL,R,
+17,Dennis Schroder,Dennis Schroder,SG,3-Jun,172,9/15/93,DE,7,
+0,Dennis Smith Jr.,Dennis Smith Jr.,PG,2-Jun,205,11/25/97,US,3,NC State
+45,Denzel Valentine,Denzel Valentine,SG,4-Jun,220,11/16/93,US,3,Michigan State
+"5, 55",Derrick Jones Jr.,Derrick Jones Jr.,SF,5-Jun,210,2/15/97,US,4,UNLV
+4,Derrick Rose,Derrick Rose,PG,2-Jun,200,10/4/88,US,11,Memphis
+4,Derrick White,Derrick White,SG,4-Jun,190,7/2/94,US,3,"Colorado-Colorado Springs, Colorado"
+22,Desmond Bane,Desmond Bane,SG,5-Jun,215,6/25/98,US,R,TCU
+1,Devin Booker,Devin Booker,SG,5-Jun,206,10/30/96,US,5,Kentucky
+24,Devin Vassell,Devin Vassell,SF,5-Jun,200,8/23/00,US,R,Florida State
+3,Devon Dotson,Devon Dotson,PG,2-Jun,185,8/2/99,US,R,Kansas
+12,Devontae Cacok,Devontae Cacok,PF,7-Jun,240,10/8/96,US,1,UNC Wilmington
+21,Dewayne Dedmon,Dewayne Dedmon,C,Jul-00,245,8/12/89,US,7,USC
+0,Didi Louzada,Didi Louzada,SF,5-Jun,188,2/7/99,BR,R,
+24,Dillon Brooks,Dillon Brooks,SF,7-Jun,225,1/22/96,CA,3,Oregon
+11,Domantas Sabonis,Domantas Sabonis,PF,11-Jun,240,5/3/96,US,4,Gonzaga
+45,Donovan Mitchell,Donovan Mitchell,PG,1-Jun,215,9/7/96,US,3,Louisville
+0,Donte DiVincenzo,Donte DiVincenzo,SG,4-Jun,203,1/31/97,US,2,Villanova
+10,Dorian Finney-Smith,Dorian Smith,PF,7-Jun,220,5/4/93,US,4,Florida
+20,Doug McDermott,Doug McDermott,PF,7-Jun,225,1/3/92,US,6,Creighton
+23,Draymond Green,Draymond Green,PF,6-Jun,230,3/4/90,US,8,Michigan State
+14,Drew Eubanks,Drew Eubanks,C,9-Jun,245,2/1/97,US,2,Oregon State
+55,Duncan Robinson,Duncan Robinson,SF,7-Jun,215,4/22/94,US,2,"Williams, Michigan"
+8,Dwayne Bacon,Dwayne Bacon,SG,6-Jun,221,8/30/95,US,3,Florida State
+39,Dwight Howard,Dwight Howard,C,10-Jun,265,12/8/85,US,16,
+7,Dwight Powell,Dwight Powell,C,10-Jun,240,7/20/91,CA,6,Stanford
+9,Dylan Windler,Dylan Windler,SF,6-Jun,196,9/22/96,US,R,Belmont
+55,E'Twaun Moore,E'Twaun Moore,SG,3-Jun,191,2/25/89,US,9,Purdue
+17,Ed Davis,Ed Davis,C,9-Jun,218,6/5/89,US,10,UNC
+5,Edmond Sumner,Edmond Sumner,SG,4-Jun,196,12/31/95,US,3,Xavier
+6,Elfrid Payton,Elfrid Payton,PG,3-Jun,195,2/22/94,US,6,Louisiana
+3,Elijah Bryant,Elijah Bryant,SG,5-Jun,210,4/19/95,US,R,"Elon University, BYU"
+33,Elijah Hughes,Elijah Hughes,SF,5-Jun,215,3/10/98,US,R,"Syracuse, East Carolina University"
+11,Enes Kanter,Enes Kanter,C,10-Jun,250,5/20/92,CH,9,
+5,Eric Bledsoe,Eric Bledsoe,SG,1-Jun,214,12/9/89,US,10,Kentucky
+10,Eric Gordon,Eric Gordon,SG,3-Jun,215,12/25/88,US,12,Indiana
+7,Eric Paschall,Eric Paschall,PF,6-Jun,255,11/4/96,US,1,"Fordham, Villanova"
+77,Ersan Ilyasova,Ersan Ilyasova,PF,9-Jun,235,5/15/87,TR,12,
+94,Evan Fournier,Evan Fournier,SG,7-Jun,205,10/29/92,FR,8,
+7,Facundo Campazzo,Facundo Campazzo,PG,10-May,195,3/23/91,AR,R,
+5,Frank Jackson,Frank Jackson,PG,3-Jun,205,5/4/98,US,2,Duke
+8,Frank Kaminsky,Frank Kaminsky,C,Jul-00,240,4/4/93,US,5,Wisconsin
+11,Frank Ntilikina,Frank Ntilikina,PG,4-Jun,200,7/28/98,BE,3,
+23,Fred VanVleet,Fred VanVleet,SG,1-Jun,197,2/25/94,US,4,Wichita State
+55,Freddie Gillespie,Freddie Gillespie,PF,9-Jun,245,6/14/97,US,R,"Carleton College, Baylor"
+30,Furkan Korkmaz,Furkan Korkmaz,SG,7-Jun,202,7/24/97,TR,3,
+2,Gabe Vincent,Gabe Vincent,PG,3-Jun,200,6/14/96,US,1,UC Santa Barbara
+6,Gabriel Deck,Gabriel Deck,PF,8-Jun,232,2/8/95,AR,R,
+17,Garrett Temple,Garrett Temple,SG,5-Jun,195,5/8/86,US,10,LSU
+24,Garrison Mathews,Garrison Mathews,SG,5-Jun,215,10/24/96,US,1,Lipscomb
+11,Gary Clark,Gary Clark,PF,6-Jun,225,11/16/94,US,2,Cincinnati
+14,Gary Harris,Gary Harris,SG,4-Jun,210,9/14/94,US,6,Michigan State
+0,Gary Payton II,Gary Payton II,PG,3-Jun,190,12/1/92,US,4,Oregon State
+33,Gary Trent Jr.,Gary Trent Jr.,SG,5-Jun,209,1/18/99,US,2,Duke
+33,George Hill,George Hill,PG,4-Jun,188,5/4/86,US,12,IUPUI
+31,Georges Niang,Georges Niang,PF,7-Jun,230,6/17/93,US,4,Iowa State
+34,Giannis Antetokounmpo,Giannis Antetokounmpo,PF,11-Jun,242,12/6/94,GR,7,
+88,Goga Bitadze,Goga Bitadze,C,11-Jun,250,7/20/99,GE,1,
+7,Goran Dragic,Goran Dragic,PG,3-Jun,190,5/6/86,SI,12,
+7,Gorgui Dieng,Gorgui Dieng,C,10-Jun,252,1/18/90,SN,7,Louisville
+12,Grant Williams,Grant Williams,PF,6-Jun,236,11/30/98,US,1,Tennessee
+3,Grayson Allen,Grayson Allen,SG,4-Jun,198,10/8/95,US,2,Duke
+6,Hamidou Diallo,Hamidou Diallo,SF,5-Jun,202,7/31/98,US,2,Kentucky
+40,Harrison Barnes,Harrison Barnes,PF,8-Jun,225,5/30/92,US,8,UNC
+4,Harry Giles,Harry Giles,C,11-Jun,240,4/22/98,US,2,Duke
+20,Hassan Whiteside,Hassan Whiteside,C,Jul-00,265,6/13/89,US,8,Marshall
+17,Ignas Brazdeikis,Ignas Brazdeikis,SF,6-Jun,221,1/8/99,LT,1,Michigan
+5,Immanuel Quickley,Immanuel Quickley,PG,3-Jun,190,6/17/99,US,R,Kentucky
+17,Isaac Bonga,Isaac Bonga,SF,8-Jun,180,11/8/99,DE,2,
+35,Isaac Okoro,Isaac Okoro,SG,5-Jun,225,1/26/01,US,R,Auburn
+55,Isaiah Hartenstein,Isaiah Hartenstein,C,Jul-00,250,5/5/98,US,2,
+7,Isaiah Joe,Isaiah Joe,SG,4-Jun,165,7/2/99,US,R,Arkansas
+22,Isaiah Roby,Isaiah Roby,PF,8-Jun,230,2/3/98,US,1,Nebraska
+28,Isaiah Stewart,Isaiah Stewart,C,8-Jun,250,5/22/01,US,R,Washington
+14,Ish Smith,Ish Smith,PG,Jun-00,175,7/5/88,US,10,Wake Forest
+40,Ivica Zubac,Ivica Zubac,C,Jul-00,240,3/18/97,BA,4,
+17,J.J. Redick,J.J. Redick,SG,3-Jun,200,6/24/84,US,14,Duke
+12,Ja Morant,Ja Morant,PG,3-Jun,174,8/10/99,US,1,Murray State
+20,Jabari Parker,Jabari Parker,PF,8-Jun,245,3/15/95,US,6,Duke
+3,Jaden McDaniels,Jaden McDaniels,PF,9-Jun,185,9/29/00,US,R,Washington
+99,Jae Crowder,Jae Crowder,PF,6-Jun,235,7/6/90,US,8,Marquette
+8,Jae'Sean Tate,Jae'Sean Tate,SF,4-Jun,230,10/28/95,US,R,Ohio State
+13,Jahlil Okafor,Jahlil Okafor,C,10-Jun,270,12/15/95,US,5,Duke
+3,Jahmi'us Ramsey,Jahmi'us Ramsey,SG,3-Jun,190,6/9/01,US,R,Texas Tech
+14,JaKarr Sampson,JaKarr Sampson,PF,7-Jun,214,3/20/93,US,5,St. John's
+10,Jake Layman,Jake Layman,SF,8-Jun,209,3/7/94,US,4,Maryland
+25,Jakob Poeltl,Jakob Poeltl,C,1-Jul,245,10/15/95,AT,4,Utah
+13,Jalen Brunson,Jalen Brunson,PG,1-Jun,190,8/31/96,US,2,Villanova
+2,Jalen Harris,Jalen Harris,SG,5-Jun,195,8/14/98,US,R,"Nevada, Louisiana Tech"
+10,Jalen Smith,Jalen Smith,PF,10-Jun,215,3/16/00,US,R,Maryland
+27,Jamal Murray,Jamal Murray,PG,3-Jun,215,2/23/97,CA,4,Kentucky
+11,James Ennis,James Ennis,SF,6-Jun,215,7/1/90,US,6,Cal State Long Beach
+13,James Harden,James Harden,PG,5-Jun,220,8/26/89,US,11,Arizona State
+16,James Johnson,James Johnson,PF,7-Jun,240,2/20/87,US,11,Wake Forest
+21,James Nunnally,James Nunnally,SF,7-Jun,208,7/14/90,US,2,UC Santa Barbara
+33,James Wiseman,James Wiseman,C,Jul-00,240,3/31/01,US,R,Memphis
+0,JaMychal Green,JaMychal Green,PF,8-Jun,227,6/21/90,US,6,Alabama
+10,Jared Dudley,Jared Dudley,PF,6-Jun,237,7/10/85,US,13,Boston College
+13,Jaren Jackson Jr.,Jaren Jackson Jr.,C,11-Jun,242,9/15/99,US,2,Michigan State
+8,Jarred Vanderbilt,Jarred Vanderbilt,PF,9-Jun,214,4/3/99,US,2,Kentucky
+5,Jarrell Brantley,Jarrell Brantley,PF,5-Jun,250,6/7/96,US,1,College of Charleston
+31,Jarrett Allen,Jarrett Allen,C,11-Jun,243,4/21/98,US,3,Texas
+23,Jarrett Culver,Jarrett Culver,SG,6-Jun,195,2/20/99,US,1,Texas Tech
+34,JaVale McGee,JaVale McGee,C,Jul-00,270,1/19/88,US,12,Nevada
+11,Javonte Green,Javonte Green,PG,4-Jun,205,7/23/93,US,1,Radford
+10,Jaxson Hayes,Jaxson Hayes,C,11-Jun,220,5/23/00,US,1,Texas
+0,Jay Scrubb,Jay Scrubb,SG,5-Jun,220,9/1/00,US,R,John A. Logan College
+7,Jaylen Brown,Jaylen Brown,SG,6-Jun,223,10/24/96,US,4,California
+8,Jaylen Hoard,Jaylen Hoard,SF,8-Jun,216,3/30/99,FR,1,Wake Forest
+4,Jaylen Nowell,Jaylen Nowell,SG,4-Jun,201,7/9/99,US,1,Washington
+0,Jayson Tatum,Jayson Tatum,SF,8-Jun,210,3/3/98,US,3,Duke
+8,Jeff Green,Jeff Green,C,8-Jun,235,8/28/86,US,12,Georgetown
+5,Jeff Teague,Jeff Teague,PG,3-Jun,195,6/10/88,US,11,Wake Forest
+9,Jerami Grant,Jerami Grant,SF,8-Jun,210,3/12/94,US,6,Syracuse
+3,Jeremiah Martin,Jeremiah Martin,PG,3-Jun,185,6/19/96,US,1,Memphis
+26,Jeremy Lamb,Jeremy Lamb,SG,5-Jun,180,5/30/92,US,8,UConn
+4,Jevon Carter,Jevon Carter,PG,1-Jun,200,9/14/95,US,2,West Virginia
+22,Jimmy Butler,Jimmy Butler,SF,7-Jun,230,9/14/89,US,9,Marquette
+12,Joe Harris,Joe Harris,SF,6-Jun,220,9/6/91,US,6,Virginia
+2,Joe Ingles,Joe Ingles,SF,8-Jun,220,10/2/87,AU,6,
+21,Joel Embiid,Joel Embiid,C,Jul-00,280,3/16/94,CM,4,Kansas
+20,John Collins,John Collins,PF,9-Jun,235,9/23/97,US,3,Wake Forest
+46,John Konchar,John Konchar,SG,5-Jun,210,3/22/96,US,1,Purdue-Fort Wayne
+1,John Wall,John Wall,PG,3-Jun,210,9/6/90,US,9,Kentucky
+17,Jonas Valanciunas,Jonas Valanciunas,C,11-Jun,265,5/6/92,LT,8,
+,Jonathan Isaac,Jonathan Isaac,PF,11-Jun,230,10/3/97,US,3,Florida State
+4,Jontay Porter,Jontay Porter,PF,11-Jun,240,11/15/99,US,R,Missouri
+20,Jordan Bell,Jordan Bell,C,8-Jun,216,1/7/95,US,3,Oregon
+0,Jordan Clarkson,Jordan Clarkson,SG,4-Jun,194,6/7/92,US,6,"Tulsa, Missouri"
+6,Jordan McLaughlin,Jordan McLaughlin,PG,11-May,185,4/9/96,US,1,USC
+13,Jordan Nwora,Jordan Nwora,SF,8-Jun,225,9/9/98,US,R,Louisville
+3,Jordan Poole,Jordan Poole,SG,4-Jun,194,6/19/99,US,1,Michigan
+8,Josh Green,Josh Green,SG,5-Jun,200,11/16/00,AU,R,Arizona
+15,Josh Hall,Josh Hall,SF,9-Jun,190,10/8/00,US,R,
+3,Josh Hart,Josh Hart,SF,5-Jun,215,3/6/95,US,3,Villanova
+20,Josh Jackson,Josh Jackson,SG,8-Jun,207,2/10/97,US,3,Kansas
+20,Josh Okogie,Josh Okogie,SG,4-Jun,213,9/1/98,NG,2,Georgia Tech
+21,Jrue Holiday,Jrue Holiday,PG,3-Jun,205,6/12/90,US,11,UCLA
+41,Juan Hernangomez,Juan Hernangomez,PF,9-Jun,214,9/28/95,ES,4,
+95,Juan Toscano-Anderson,Juan Anderson,SG,6-Jun,209,4/10/93,US,1,Marquette
+30,Julius Randle,Julius Randle,PF,8-Jun,250,11/29/94,US,6,Kentucky
+8,Justin Holiday,Justin Holiday,SG,6-Jun,180,4/5/89,US,7,Washington
+44,Justin Jackson,Justin Jackson,SF,8-Jun,220,3/28/95,US,3,UNC
+10,Justin James,Justin James,SF,7-Jun,190,1/24/97,US,1,Wyoming
+7,Justise Winslow,Justise Winslow,SF,6-Jun,222,3/26/96,US,5,Duke
+27,Jusuf Nurkić,Jusuf Nurkić,C,11-Jun,290,8/23/94,BA,6,
+16,Juwan Morgan,Juwan Morgan,PF,7-Jun,232,4/17/97,US,1,Indiana
+32,Karl-Anthony Towns,Karl-Anthony Towns,C,11-Jun,248,11/15/95,US,5,Kentucky
+2,Kawhi Leonard,Kawhi Leonard,SF,7-Jun,225,6/29/91,US,9,San Diego State
+31,Keita Bates-Diop,Keita Diop,SF,8-Jun,229,1/23/96,US,2,Ohio State
+21,Kelan Martin,Kelan Martin,SF,5-Jun,230,8/3/95,US,1,Butler
+3,Keldon Johnson,Keldon Johnson,SF,5-Jun,220,10/11/99,US,1,Kentucky
+21,Keljin Blevins,Keljin Blevins,SF,4-Jun,200,11/24/95,US,R,"Southern Miss, Montana State"
+41,Kelly Olynyk,Kelly Olynyk,PF,11-Jun,240,4/19/91,CA,7,Gonzaga
+12,Kelly Oubre Jr.,Kelly Oubre Jr.,SF,7-Jun,203,12/9/95,US,5,Kansas
+25,Kendrick Nunn,Kendrick Nunn,PG,2-Jun,190,8/3/95,US,1,"Illinois, Oakland"
+34,Kenrich Williams,Kenrich Williams,PF,6-Jun,210,12/2/94,US,2,TCU
+26,Kent Bazemore,Kent Bazemore,SF,4-Jun,195,7/1/89,US,8,Old Dominion
+1,Kentavious Caldwell-Pope,Kentavious Pope,SG,5-Jun,204,2/18/93,US,7,Georgia
+6,Kenyon Martin Jr.,Kenyon Martin Jr.,SF,6-Jun,215,1/6/01,US,R,
+7,Kevin Durant,Kevin Durant,PF,10-Jun,240,9/29/88,US,12,Texas
+3,Kevin Huerter,Kevin Huerter,SG,7-Jun,190,8/27/98,US,2,Maryland
+20,Kevin Knox,Kevin Knox,SF,7-Jun,215,8/11/99,US,2,Kentucky
+0,Kevin Love,Kevin Love,PF,8-Jun,251,9/7/88,US,12,UCLA
+3,Kevin Porter Jr.,Kevin Porter Jr.,SG,4-Jun,203,5/4/00,US,1,USC
+5,Kevon Looney,Kevon Looney,C,9-Jun,222,2/6/96,US,5,UCLA
+24,Khem Birch,Khem Birch,C,9-Jun,233,9/28/92,CA,3,"Pitt, UNLV"
+22,Khris Middleton,Khris Middleton,SF,7-Jun,222,8/12/91,US,8,Texas A&M
+20,Khyri Thomas,Khyri Thomas,SG,3-Jun,210,5/8/96,US,2,Creighton
+7,Killian Hayes,Killian Hayes,PG,5-Jun,195,7/27/01,US,R,
+35,Killian Tillie,Killian Tillie,C,9-Jun,220,3/5/98,FR,R,Gonzaga
+13,Kira Lewis Jr.,Kira Lewis Jr.,PG,1-Jun,170,4/6/01,US,R,Alabama
+,Klay Thompson,Klay Thompson,SG,6-Jun,215,2/8/90,US,8,Washington State
+37,Kostas Antetokounmpo,Kostas Antetokounmpo,PF,10-Jun,200,11/20/97,GR,2,Dayton
+32,Kris Dunn,Kris Dunn,PG,3-Jun,205,3/18/94,US,4,Providence
+6,Kristaps Porzingis,Kristaps Porzingis,C,3-Jul,240,8/2/95,LV,4,
+1,Kyle Anderson,Kyle Anderson,PF,9-Jun,230,9/20/93,US,6,UCLA
+7,Kyle Guy,Kyle Guy,PG,1-Jun,167,8/11/97,US,1,Virginia
+0,Kyle Kuzma,Kyle Kuzma,SF,10-Jun,221,7/24/95,US,3,Utah
+7,Kyle Lowry,Kyle Lowry,PG,Jun-00,196,3/25/86,US,14,Villanova
+11,Kyrie Irving,Kyrie Irving,PG,2-Jun,195,3/23/92,AU,9,Duke
+"4, 11",KZ Okpala,KZ Okpala,PF,8-Jun,215,4/28/99,US,1,Stanford
+8,Lamar Stevens,Lamar Stevens,PF,6-Jun,230,7/9/97,US,R,Penn State
+8,Lamar Stevens,Lamar Stevens,PF,6-Jun,230,7/9/97,US,R,Penn State
+"13, 20",Landry Shamet,Landry Shamet,SG,4-Jun,190,3/13/97,US,2,Wichita State
+2,Langston Galloway,Langston Galloway,SG,1-Jun,200,12/9/91,US,6,Saint Joseph's
+22,Larry Nance Jr.,Larry Nance Jr.,PF,7-Jun,245,1/1/93,US,5,Wyoming
+24,Lauri Markkanen,Lauri Markkanen,PF,Jul-00,240,5/22/97,FI,3,Arizona
+23,LeBron James,LeBron James,PG,9-Jun,250,12/30/84,US,17,
+1,Lonnie Walker,Lonnie Walker,SG,4-Jun,204,12/14/98,US,2,Miami (FL)
+2,Lonzo Ball,Lonzo Ball,PG,6-Jun,190,10/27/97,US,3,UCLA
+6,Lou Williams,Lou Williams,PG,1-Jun,175,10/27/86,US,15,
+,Luca Vildoza,Luca Vildoza,G,3-Jun,190,8/11/95,AR,R,
+5,Luguentz Dort,Luguentz Dort,SG,3-Jun,215,4/19/99,CA,1,Arizona State
+77,Luka Doncic,Luka Doncic,PG,7-Jun,230,2/28/99,SI,2,
+19,Luka Samanic,Luka Samanic,PF,10-Jun,227,1/9/00,HR,1,
+5,Luke Kennard,Luke Kennard,SG,5-Jun,206,6/24/96,US,3,Duke
+40,Luke Kornet,Luke Kornet,C,2-Jul,250,7/15/95,US,3,Vanderbilt
+8,Malachi Flynn,Malachi Flynn,PG,1-Jun,175,5/10/98,US,R,"Washington State, San Diego State"
+7,Malcolm Brogdon,Malcolm Brogdon,PG,5-Jun,229,12/11/92,US,4,Virginia
+5,Malik Beasley,Malik Beasley,SG,4-Jun,187,11/26/96,US,4,Florida State
+25,Mamadi Diakite,Mamadi Diakite,PF,9-Jun,228,1/21/97,GN,R,Virginia
+14,Marc Gasol,Marc Gasol,C,11-Jun,255,1/29/85,ES,12,
+8,Marcus Morris,Marcus Morris,PF,8-Jun,218,9/2/89,US,9,Kansas
+36,Marcus Smart,Marcus Smart,PG,3-Jun,220,3/6/94,US,6,Oklahoma State
+20,Markelle Fultz,Markelle Fultz,PG,3-Jun,209,5/29/98,US,3,Washington
+88,Markieff Morris,Markieff Morris,PF,9-Jun,245,9/2/89,US,9,Kansas
+0,Markus Howard,Markus Howard,SG,10-May,175,3/3/99,US,R,Marquette
+35,Marvin Bagley III,Marvin Bagley III,PF,11-Jun,235,3/14/99,US,2,Duke
+24,Mason Plumlee,Mason Plumlee,C,11-Jun,254,3/5/90,US,7,Duke
+22,Matisse Thybulle,Matisse Thybulle,SG,5-Jun,201,3/4/97,US,1,Washington
+21,Matt Thomas,Matt Thomas,SG,4-Jun,190,8/4/94,US,1,Iowa State
+18,Matthew Dellavedova,Matthew Dellavedova,PG,3-Jun,200,9/8/90,AU,7,Saint Mary's
+8,Maurice Harkless,Maurice Harkless,PF,7-Jun,220,5/11/93,US,8,St. John's
+31,Max Strus,Max Strus,SF,5-Jun,215,3/28/96,US,1,"Lewis (IL), DePaul"
+42,Maxi Kleber,Maxi Kleber,PF,10-Jun,240,1/29/92,DE,3,
+27,Mfiondu Kabengele,Mfiondu Kabengele,PF,9-Jun,250,8/14/97,CA,1,Florida State
+7,Michael Carter-Williams,Michael Williams,SG,5-Jun,190,10/10/91,US,7,Syracuse
+1,Michael Porter Jr.,Michael Porter Jr.,SF,10-Jun,218,6/29/98,US,1,Missouri
+25,Mikal Bridges,Mikal Bridges,SF,6-Jun,209,8/30/96,US,2,Villanova
+10,Mike Conley,Mike Conley,PG,1-Jun,175,10/11/87,US,13,Ohio State
+55,Mike James,Mike James,PG,1-Jun,189,8/18/90,US,1,Lamar
+33,Mike Muscala,Mike Muscala,C,10-Jun,240,7/1/91,US,7,Bucknell
+1,Mike Scott,Mike Scott,PF,7-Jun,237,7/16/88,US,8,Virginia
+23,Mitchell Robinson,Mitchell Robinson,C,Jul-00,240,4/1/98,US,2,Western Kentucky
+81,Miye Oni,Miye Oni,SG,5-Jun,206,8/4/97,US,1,Yale
+5,Mo Bamba,Mo Bamba,C,Jul-00,231,5/12/98,US,2,Texas
+11,Monte Morris,Monte Morris,PG,2-Jun,183,6/27/95,US,3,Iowa State
+15,Montrezl Harrell,Montrezl Harrell,C,7-Jun,240,1/26/94,US,5,Louisville
+21,Moritz Wagner,Moritz Wagner,C,11-Jun,245,4/26/97,DE,2,Michigan
+15,Mychal Mulder,Mychal Mulder,PG,3-Jun,184,6/12/94,CA,1,"Vincennes University, Kentucky"
+33,Myles Turner,Myles Turner,C,11-Jun,250,3/24/96,US,5,Texas
+8,Naji Marshall,Naji Marshall,SF,7-Jun,220,1/24/98,US,R,Xavier
+9,Nassir Little,Nassir Little,PF,5-Jun,220,2/11/00,US,1,UNC
+14,Nate Hinton,Nate Hinton,SG,5-Jun,210,6/8/99,US,R,Houston
+1,Nathan Knight,Nathan Knight,PF,10-Jun,253,9/20/97,US,R,William & Mary
+11,Naz Reid,Naz Reid,C,9-Jun,264,8/26/99,US,1,LSU
+70,Nemanja Bjelica,Nemanja Bjelica,PF,10-Jun,234,5/9/88,RS,5,
+3,Nerlens Noel,Nerlens Noel,C,11-Jun,220,4/10/94,US,6,Kentucky
+6,Nickeil Alexander-Walker,Nickeil Walker,SG,6-Jun,205,9/2/98,CA,1,Virginia Tech
+2,Nico Mannion,Nico Mannion,PG,2-Jun,190,3/14/01,IT,R,Arizona
+33,Nicolas Batum,Nicolas Batum,SF,8-Jun,230,12/14/88,FR,12,
+33,Nicolas Claxton,Nicolas Claxton,C,11-Jun,215,4/17/99,US,1,Georgia
+44,Nicolo Melli,Nicolo Melli,PF,9-Jun,236,1/26/91,IT,1,
+15,Nikola Jokic,Nikola Jokic,C,11-Jun,284,2/19/95,RS,5,
+9,Nikola Vucevic,Nikola Vucevic,C,11-Jun,260,10/24/90,CH,9,USC
+24,Norman Powell,Norman Powell,SF,3-Jun,215,5/25/93,US,5,UCLA
+14,Norvel Pelle,Norvel Pelle,C,10-Jun,231,2/3/93,AG,1,
+1,Obi Toppin,Obi Toppin,PF,9-Jun,220,3/4/98,US,R,Dayton
+3,OG Anunoby,OG Anunoby,SF,7-Jun,232,7/17/97,GB,3,Indiana
+,Omer Yurtseven,Omer Yurtseven,C,Jul-00,264,6/19/98,TR,R,"NC State, Georgetown"
+17,Onyeka Okongwu,Onyeka Okongwu,C,8-Jun,235,12/11/00,US,R,USC
+12,Oshae Brissett,Oshae Brissett,SF,7-Jun,210,6/20/98,CA,1,Syracuse
+22,Otto Porter,Otto Porter,PF,8-Jun,198,6/3/93,US,7,Georgetown
+17,P.J. Tucker,P.J. Tucker,PF,5-Jun,245,5/5/85,US,9,Texas
+43,Pascal Siakam,Pascal Siakam,PF,9-Jun,230,4/2/94,CM,4,New Mexico State
+24,Pat Connaughton,Pat Connaughton,SG,5-Jun,209,1/6/93,US,5,Notre Dame
+21,Patrick Beverley,Patrick Beverley,PG,1-Jun,180,7/12/88,US,8,Arkansas
+54,Patrick Patterson,Patrick Patterson,PF,8-Jun,235,3/14/89,US,10,Kentucky
+"9, 44",Patrick Williams,Patrick Williams,PF,7-Jun,215,8/26/01,US,R,Florida State
+8,Patty Mills,Patty Mills,PG,1-Jun,180,8/11/88,AU,11,Saint Mary's
+13,Paul George,Paul George,SF,8-Jun,220,5/2/90,US,10,Fresno State
+4,Paul Millsap,Paul Millsap,PF,7-Jun,257,2/10/85,US,14,Louisiana Tech
+44,Paul Reed,Paul Reed,PF,9-Jun,210,6/14/99,US,R,DePaul
+1,Paul Watson,Paul Watson,SF,6-Jun,210,12/30/94,US,1,Fresno State
+11,Payton Pritchard,Payton Pritchard,SG,1-Jun,195,1/28/98,US,R,Oregon
+35,PJ Dozier,PJ Dozier,SG,6-Jun,205,10/25/96,US,3,South Carolina
+5,Precious Achiuwa,Precious Achiuwa,PF,8-Jun,225,9/19/99,NG,R,Memphis
+15,Quinndary Weatherspoon,Quinndary Weatherspoon,SG,3-Jun,205,9/10/96,US,1,Mississippi State
+13,R.J. Hampton,R.J. Hampton,SG,4-Jun,175,2/7/01,US,R,
+4,Rajon Rondo,Rajon Rondo,PG,1-Jun,180,2/22/86,US,14,Kentucky
+19,Raul Neto,Raul Neto,PG,1-Jun,180,5/19/92,BR,5,
+9,Rayjon Tucker,Rayjon Tucker,PG,3-Jun,209,9/24/97,US,1,"Florida Gulf Coast, Little Rock"
+25,Reggie Bullock,Reggie Bullock,SF,6-Jun,205,3/16/91,US,7,UNC
+1,Reggie Jackson,Reggie Jackson,SG,2-Jun,208,4/16/90,IT,9,Boston College
+"0, 14",Reggie Perry,Reggie Perry,PF,8-Jun,250,3/21/00,US,R,Mississippi State
+22,Richaun Holmes,Richaun Holmes,C,10-Jun,235,10/15/93,US,5,Bowling Green
+9,Ricky Rubio,Ricky Rubio,PG,3-Jun,190,10/21/90,ES,9,
+9,RJ Barrett,RJ Barrett,SG,6-Jun,214,6/14/00,CA,1,Duke
+23,Robert Covington,Robert Covington,PF,7-Jun,209,12/14/90,US,7,Tennessee State
+44,Robert Williams,Robert Williams,C,8-Jun,237,10/17/97,US,2,Texas A&M
+13,Robert Woodard,Robert Woodard,SF,6-Jun,235,9/22/99,US,R,Mississippi State
+15,Robin Lopez,Robin Lopez,C,Jul-00,281,4/1/88,US,12,Stanford
+32,Rodney Hood,Rodney Hood,SF,8-Jun,208,10/20/92,US,6,"Mississippi State, Duke"
+17,Rodney McGruder,Rodney McGruder,SG,4-Jun,205,7/29/91,US,4,Kansas State
+45,Romeo Langford,Romeo Langford,SG,4-Jun,216,10/25/99,US,1,Indiana
+2,Rondae Hollis-Jefferson,Rondae Jefferson,PF,6-Jun,217,1/3/95,US,5,Arizona
+23,Royce O'Neale,Royce O'Neale,SF,4-Jun,226,6/5/93,US,3,"Denver, Baylor"
+22,Rudy Gay,Rudy Gay,PF,8-Jun,250,8/17/86,US,14,UConn
+27,Rudy Gobert,Rudy Gobert,C,1-Jul,258,6/26/92,FR,7,
+8,Rui Hachimura,Rui Hachimura,PF,8-Jun,230,2/8/98,JP,1,Gonzaga
+4,Russell Westbrook,Russell Westbrook,PG,3-Jun,200,11/12/88,US,12,UCLA
+51,Ryan Arcidiacono,Ryan Arcidiacono,PG,3-Jun,195,3/26/94,US,3,Villanova
+38,Saben Lee,Saben Lee,PG,2-Jun,183,6/23/99,US,R,Vanderbilt
+41,Saddiq Bey,Saddiq Bey,SF,7-Jun,215,4/9/99,US,R,Villanova
+15,Sam Merrill,Sam Merrill,SG,4-Jun,205,5/15/96,US,R,Utah State University
+30,Sean McDermott,Sean McDermott,SF,6-Jun,195,11/3/96,US,R,Butler
+45,Sekou Doumbouya,Sekou Doumbouya,PF,8-Jun,230,12/23/00,GN,1,
+37,Semi Ojeleye,Semi Ojeleye,PF,6-Jun,240,12/5/94,US,3,"Duke, SMU"
+9,Serge Ibaka,Serge Ibaka,C,10-Jun,235,9/18/89,CG,11,
+31,Seth Curry,Seth Curry,SG,2-Jun,185,8/23/90,US,6,"Liberty, Duke"
+2,Shai Gilgeous-Alexander,Shai Alexander,SG,6-Jun,180,7/12/98,CA,2,Kentucky
+18,Shake Milton,Shake Milton,SG,5-Jun,205,9/26/96,US,2,SMU
+3,Shaquille Harrison,Shaquille Harrison,SG,7-Jun,190,10/6/93,US,3,Tulsa
+12,Sindarius Thornwell,Sindarius Thornwell,SG,4-Jun,215,11/15/94,US,3,South Carolina
+4,Skylar Mays,Skylar Mays,SG,4-Jun,205,9/5/97,US,R,LSU
+18,Solomon Hill,Solomon Hill,PF,6-Jun,226,3/18/91,US,7,Arizona
+26,Spencer Dinwiddie,Spencer Dinwiddie,SG,5-Jun,215,4/6/93,US,6,Colorado
+5,Stanley Johnson,Stanley Johnson,PF,6-Jun,242,5/29/96,US,5,Arizona
+30,Stephen Curry,Stephen Curry,PG,3-Jun,185,3/14/88,US,11,Davidson
+0,Sterling Brown,Sterling Brown,SG,5-Jun,219,2/10/95,US,3,SMU
+12,Steven Adams,Steven Adams,C,11-Jun,265,7/20/93,NZ,7,Pitt
+14,Sviatoslav Mykhailiuk,Sviatoslav Mykhailiuk,SG,7-Jun,205,6/10/97,UA,2,Kansas
+18,T.J. Leaf,T.J. Leaf,PF,10-Jun,222,4/30/97,IL,3,UCLA
+9,T.J. McConnell,T.J. McConnell,PG,1-Jun,190,3/25/92,US,5,"Duquesne, Arizona"
+1,T.J. Warren,T.J. Warren,SF,8-Jun,220,9/5/93,US,6,NC State
+99,Tacko Fall,Tacko Fall,C,5-Jul,311,12/10/95,SN,1,Central Florida
+67,Taj Gibson,Taj Gibson,PF,9-Jun,232,6/24/85,US,11,USC
+5,Talen Horton-Tucker,Talen Tucker,SG,4-Jun,234,11/25/00,US,1,Iowa State
+12,Taurean Prince,Taurean Prince,PF,7-Jun,218,3/22/94,US,4,Baylor
+14,Terance Mann,Terance Mann,SG,5-Jun,215,10/18/96,US,1,Florida State
+9,Terence Davis,Terence Davis,SG,4-Jun,201,5/16/97,US,1,Ole Miss
+31,Terrence Ross,Terrence Ross,SG,6-Jun,206,2/5/91,US,8,Washington
+11,Théo Maledon,Théo Maledon,PG,4-Jun,175,6/12/01,FR,R,
+21,Thaddeus Young,Thaddeus Young,PF,8-Jun,235,6/21/88,US,13,Georgia Tech
+43,Thanasis Antetokounmpo,Thanasis Antetokounmpo,SF,6-Jun,219,7/18/92,GR,2,
+21,Theo Pinson,Theo Pinson,SG,5-Jun,212,11/5/95,US,2,UNC
+13,Thomas Bryant,Thomas Bryant,C,10-Jun,248,7/31/97,US,3,Indiana
+10,Tim Frazier,Tim Frazier,PG,Jun-00,170,11/1/90,US,6,Penn State
+11,Tim Hardaway Jr.,Tim Hardaway Jr.,SG,5-Jun,205,3/16/92,US,7,Michigan
+9,Timothe Luwawu-Cabarrot,Timothe Cabarrot,SF,7-Jun,220,5/9/95,FR,4,
+12,Tobias Harris,Tobias Harris,PF,8-Jun,226,7/15/92,US,9,Tennessee
+31,Tomas Satoransky,Tomas Satoransky,SG,7-Jun,210,10/30/91,CZ,4,
+13,Tony Bradley,Tony Bradley,C,10-Jun,248,1/8/98,US,3,UNC
+19,Tony Snell,Tony Snell,SG,6-Jun,213,11/10/91,US,7,New Mexico
+12,Torrey Craig,Torrey Craig,SF,7-Jun,221,12/19/90,US,3,USC Upstate
+11,Trae Young,Trae Young,PG,1-Jun,180,9/19/98,US,2,Oklahoma
+33,Tre Jones,Tre Jones,PG,1-Jun,185,1/8/00,US,R,Duke
+51,Tremont Waters,Tremont Waters,PG,10-May,175,1/10/98,US,1,LSU
+3,Trent Forrest,Trent Forrest,PG,4-Jun,210,6/12/98,US,R,Florida State
+"0, 8",Trevor Ariza,Trevor Ariza,SF,8-Jun,215,6/30/85,US,16,UCLA
+3,Trey Burke,Trey Burke,PG,Jun-00,185,11/12/92,US,7,Michigan
+41,Trey Lyles,Trey Lyles,PF,9-Jun,234,11/5/95,CA,5,Kentucky
+13,Tristan Thompson,Tristan Thompson,PF,9-Jun,254,3/13/91,CA,9,Texas
+7,Troy Brown Jr.,Troy Brown Jr.,SF,6-Jun,215,7/28/99,US,2,Oregon
+16,Ty Jerome,Ty Jerome,SG,5-Jun,195,7/8/97,US,1,Virginia
+0,Ty-Shon Alexander,Ty-Shon Alexander,SG,3-Jun,195,7/16/98,US,R,Creighton
+2,Tyler Bey,Tyler Bey,SF,7-Jun,215,2/10/98,US,R,Colorado
+25,Tyler Cook,Tyler Cook,SF,8-Jun,255,9/23/97,US,1,Iowa
+14,Tyler Herro,Tyler Herro,SG,5-Jun,195,1/20/00,US,1,Kentucky
+10,Tyler Johnson,Tyler Johnson,SG,3-Jun,186,5/7/92,US,6,Fresno State
+1,Tyrell Terry,Tyrell Terry,PG,2-Jun,160,9/28/00,US,R,Stanford
+0,Tyrese Haliburton,Tyrese Haliburton,PG,5-Jun,185,2/29/00,US,R,Iowa State
+0,Tyrese Maxey,Tyrese Maxey,SG,2-Jun,200,11/4/00,US,R,Kentucky
+21,Tyus Jones,Tyus Jones,PG,Jun-00,196,5/10/96,US,5,Duke
+20,Udoka Azubuike,Udoka Azubuike,C,10-Jun,280,9/17/99,NG,R,Kansas
+40,Udonis Haslem,Udonis Haslem,C,8-Jun,235,6/9/80,US,17,Florida
+4,Victor Oladipo,Victor Oladipo,SG,4-Jun,213,5/4/92,US,7,Indiana
+31,Vlatko Cancar,Vlatko Cancar,PF,8-Jun,236,4/10/97,SI,1,
+8,Wayne Ellington,Wayne Ellington,SG,4-Jun,207,11/29/87,US,11,UNC
+34,Wendell Carter Jr.,Wendell Carter Jr.,C,10-Jun,270,4/16/99,US,2,Duke
+32,Wenyen Gabriel,Wenyen Gabriel,PF,9-Jun,205,3/26/97,SD,1,Kentucky
+4,Wesley Iwundu,Wesley Iwundu,SF,6-Jun,195,12/20/94,US,3,Kansas State
+9,Wesley Matthews,Wesley Matthews,SG,4-Jun,220,10/14/86,US,11,Marquette
+5,Will Barton,Will Barton,SF,6-Jun,181,1/6/91,US,8,Memphis
+33,Willie Cauley-Stein,Willie Stein,C,Jul-00,240,8/18/93,US,5,Kentucky
+9,Willy Hernangomez,Willy Hernangomez,C,11-Jun,250,5/27/94,ES,4,
+2,Xavier Tillman Sr.,Xavier Tillman Sr.,PF,8-Jun,245,1/12/99,US,R,Michigan State
+11,Yogi Ferrell,Yogi Ferrell,PG,Jun-00,178,5/9/93,US,4,Indiana
+18,Yuta Watanabe,Yuta Watanabe,SF,9-Jun,215,10/13/94,JP,2,George Washington
+,Zach Collins,Zach Collins,PF,11-Jun,250,11/19/97,US,3,Gonzaga
+8,Zach LaVine,Zach LaVine,SG,5-Jun,200,3/10/95,US,6,UCLA
+22,Zeke Nnaji,Zeke Nnaji,PF,44356,240,1/9/01,US,R,Arizona
+1,Zion Williamson,Zion Williamson,PF,44354,284,7/6/00,US,1,Duke
+,Marquese Chriss,Marquese Chriss,PF,,,,,,
+,Brad Wanamaker,Brad Wanamaker,SG,,,,,,
+,Rodions Kurucs,Roions Kurucs,,,,,,,
+,Quinn Cook,Quinn Cook,PG,,,,,,
+,Gordon Hayward,Gordon Hayward,SG,,,,,,
+,P.J. Washington,P.J. Washington,PF,,,,,,
+,Cody Zeller,Cody Zeller,C,,,,,,
+,Terry Rozier,Terry Rozier,PG,,,,,,
+,Devonte' Graham,Devonte' Graham,PG,,,,,,
+,LaMelo Ball,LaMelo Ball,PG,,,,,,
+,Miles Bridges,Miles Bridges,PF,,,,,,
+,Bismack Biyombo,Bismack Biyombo,C,,,,,,
+,Cody Martin,Cody Martin,SF,,,,,,
+,Jalen McDaniels,Jalen McDaniels,SF,,,,,,
+,Marques Bolden,Maions Bolden,,,,,,,
+,JJ Redick,JJ Redick,SG,,,,,,
+,Bogdan Bogdanovic,Bogdan Bogdanovic,SG,,,,,,
+,LaMarcus Aldridge,LaMarcus Aldridge,PF,,,,,,
+,Svi Mykhailiuk,Svions Mykhailiuk,,,,,,,
+,Derrick Favors,Derrick Favors,PF,,,,,,
+,Jusuf Nurkic,Jusuf Nurkic,C,,,,,,
+,Josh Richardson,Josh Richardson,SG,,,,,,
+,Meyers Leonard,Meyers Leonard,C,,,,,,
+,Chris Silva,Chions Silva,,,,,,,
+,Wes Iwundu,Weions Iwundu,,,,,,,
+,Al Horford,Al Horford,PF,,,,,,
+,Theo Maledon,Thions Maledon,,,,,,,
+,Caleb Martin,Caions Martin,,,,,,,
+,Jerome Robinson,Jeions Robinson,,,,,,,
+,Jalen Lecque,Jaions Lecque,,,,,,,
+,Bruno Caboclo,Brions Caboclo,,,,,,,
+,Glenn Robinson III,Glenn�Robinson III,SF,,,,,,
+,Terrance Ferguson,Terrance Ferguson,SG,,,,,,
+,Dakota Mathias,Daions Mathias,,,,,,,
+,Thon Maker,Thon Maker,C,,,,,,
+,Jared Harper,Jaions Harper,,,,,,,
+,Vernon Carey Jr.,Veions Jr.,,,,,,,
+,Nick Richards,Niions Richards,,,,,,,
+,Vincent Poirier,Viions Poirier,,,,,,,
+,Karim Mane,Kaions Mane,,,,,,,
+,Jordan Bone,Joions Bone,,,,,,,
+,Moses Brown,Moses Brown,C,,,,,,
+,Anzejs Pasecniks,Anions Pasecniks,,,,,,,
+,Xavier Tillman,Xavier Tillman,SF,,,,,,
+,Malik Monk,Malik Monk,SG,,,,,,
+,Darius Miller,Daions Miller,,,,,,,
+,Jaylen Adams,Jaions Adams,,,,,,,
+,Mason Jones,Maions Jones,,,,,,,
+,Rodions Kurucs,Roions Kurucs,,,,,,,
+,Kemba Walker,Kemba Walker,PG,,,,,,
+,Brian Bowen II,Brions II,,,,,,,
+,Ashton Hagans,Asions Hagans,,,,,,,
+,Frank Mason,Frank Mason,PG,,,,,,
+,Noah Vonleh,Noah Vonleh,C,,,,,,
+,Ray Spalding,Raions Spalding,,,,,,,
+,Andre Roberson,Anions Roberson,,,,,,,
+,Patrick McCaw,Patrick McCaw,SG,,,,,,
+,Justin Patton,Juions Patton,,,,,,,
+,Iman Shumpert,Imions Shumpert,,,,,,,
+,Greg Whittington,Grions Whittington,,,,,,,
+,Henry Ellenson,Heions Ellenson,,,,,,,
+,Nate Darling,Naions Darling,,,,,,,
+,Svi Mykhailiuk,Svions Mykhailiuk,,,,,,,
+,Will Magnay,Wiions Magnay,,,,,,,
+,Cameron Reynolds,Caions Reynolds,,,,,,,
+,Wes Iwundu,Weions Iwundu,,,,,,,
+,Chris Silva,Chions Silva,,,,,,,
+,LaMarcus Aldridge,LaMarcus Aldridge,PF,,,,,,
+,Grant Riller,Grions Riller,,,,,,,
+,Mason Jones,Maions Jones,,,,,,,
+,Justin Robinson,Juions Robinson,,,,,,,
+,Isaiah Thomas,Isaiah Thomas,PG,,,,,,
+,Devin Cannady,Deions Cannady,,,,,,,
+,Rodions Kurucs,Rodions Kurucs,SF,,,,,,
+,Malik Fitts,Maions Fitts,,,,,,,
+,JJ Redick,JJ Redick,SG,,,,,,
+,Robert Franks,Roions Franks,,,,,,,
+,Donta Hall,Doions Hall,,,,,,,
+,Charlie Brown Jr.,Chions Jr.,,,,,,,
+,Anderson Varejao,Anions Varejao,,,,,,,
+,Louis King,Loions King,,,,,,,
+,Cameron Oliver,Caions Oliver,,,,,,,
+,Cameron Reynolds,Caions Reynolds,,,,,,,
