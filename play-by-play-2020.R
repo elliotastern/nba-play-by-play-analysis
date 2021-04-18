@@ -69,3 +69,75 @@ nba_team_box_score_df <- nba_team_box_score_df[, c("GAME_DATE_EST", "REAL_GAME_I
                                                    "REB_home", "PTS_away", 
                                                    "FG_PCT_away", "FG3_PCT_away", 
                                                    "AST_away", "REB_away")]
+
+nba_team_box_score_df %<>% 
+  rename(
+    Initials = Initials,
+    Opponent_Initials = Initials_away,
+    Points_Scored = PTS_home,
+    Field_Goal_Percentage = FG_PCT_home,
+    Three_Point_Percentage = FG3_PCT_home,
+    Assists = AST_home,
+    Rebounds = REB_home,
+    Opp_Points_Scored = PTS_away,
+    Opp_Field_Goal_Percentage = FG_PCT_away,
+    Opp_Three_Point_Percentage = FG3_PCT_away,
+    Opp_Assists = AST_away,
+    Opp_Rebounds = REB_away
+  )
+
+nba_team_box_score_df_away_teams <- nba_team_box_score_df_away_teams[, c("GAME_DATE_EST", "REAL_GAME_ID",
+                                                                         "Initials_away", "Initials", "nickname_away",
+                                                                         "PTS_away", "FG_PCT_away", 
+                                                                         "FG3_PCT_away", "AST_away", 
+                                                                         "REB_away", "PTS_home", 
+                                                                         "FG_PCT_home", "FG3_PCT_home", 
+                                                                         "AST_home", "REB_home")]
+nba_team_box_score_df_away_teams %<>% 
+  rename(
+    Opponent_Initials = Initials,
+    Initials = Initials_away,
+    nickname = nickname_away,
+    Points_Scored = PTS_away,
+    Field_Goal_Percentage = FG_PCT_away,
+    Three_Point_Percentage = FG3_PCT_away,
+    Assists = AST_away,
+    Rebounds = REB_away,
+    Opp_Points_Scored = PTS_home,
+    Opp_Field_Goal_Percentage = FG_PCT_home,
+    Opp_Three_Point_Percentage = FG3_PCT_home,
+    Opp_Assists = AST_home,
+    Opp_Rebounds = REB_home,
+  )
+
+
+# Join the tables into one
+nba_team_box_score_df <- bind_rows(nba_team_box_score_df, 
+                                   nba_team_box_score_df_away_teams)
+
+remove(nba_team_box_score_df_away_teams)
+
+nba_team_box_score_df$DATE_TEAM_ID <- paste(nba_team_box_score_df$GAME_DATE_EST, nba_team_box_score_df$Initials)
+
+all_nba_data <- left_join(nba_team_box_score_df, lineup_df, 
+                          by = "DATE_TEAM_ID")
+
+nba_team_box_score_df$DATE_TEAM_ID
+
+# Add player details to player list dataframe
+
+# Adjust Names that do not match with a translator 
+player_details_df_2 <- left_join(player_details_df, player_name_translator, by = c("PLAYER" = "Source.1"))
+player_details_df_2 <- player_details_df_2[!is.na(player_details_df_2$Source.2), ]
+player_details_df_2$PLAYER <- player_details_df_2$Source.2
+player_details_df_2$Source.2 <- NULL
+
+player_details_df <- bind_rows(player_details_df, player_details_df_2)
+
+nba_player_list <- left_join(nba_player_list, player_details_df, by = c("PLAYER_NAME" = "PLAYER"))
+
+nba_player_list_name_error <- nba_player_list[nba_player_list$POS == "", ]
+
+# remove duplicates and players with low minutes
+nba_player_list <- nba_player_list[!nba_player_list$POS == "", ]
+
