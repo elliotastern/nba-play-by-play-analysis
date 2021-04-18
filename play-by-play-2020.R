@@ -141,3 +141,55 @@ nba_player_list_name_error <- nba_player_list[nba_player_list$POS == "", ]
 # remove duplicates and players with low minutes
 nba_player_list <- nba_player_list[!nba_player_list$POS == "", ]
 
+
+############################## 
+# 3 - CREATE THE DATAFRAME FOR DATA VIZ
+############################## 
+
+# Remove duplicate rows
+all_nba_data <- unique(all_nba_data)
+
+
+for (z in 1:nrow(nba_player_list)){
+  player_name <- unlist(nba_player_list[z, 1])
+  teams <- unlist(nba_player_list[nba_player_list$PLAYER_NAME == player_name, "TEAM_ABBREVIATION"])
+  player_underlined <- unlist(nba_player_list[z,3])
+  all_nba_data[player_underlined] <- "Not On Team"
+  all_nba_data[all_nba_data$Initials %in% teams, player_underlined] <- "Did Not Play"
+  
+  for (i in 1:nrow(all_nba_data)){
+    if(player_name %in% unlist(all_nba_data$lineup[i]) == TRUE){
+      all_nba_data[i, player_underlined] <- "Played"
+    }
+  }
+}
+
+# Add statistics
+all_nba_data$Point_Differential <- all_nba_data$Points_Scored - all_nba_data$Opp_Points_Scored
+all_nba_data$Rebounds_Differential <- all_nba_data$Rebounds - all_nba_data$Opp_Rebounds
+all_nba_data$Assists_Differential <- all_nba_data$Assists - all_nba_data$Opp_Assists
+
+all_nba_data$lineup <- vapply(all_nba_data$lineup, paste, collapse = ", ", character(1L))
+
+
+# Add player team list
+player_position <- nba_player_list[nba_player_list$PLAYER_NAME == player_name_space, "POS"]
+all_nba_data$GAME_DATE_EST <- as.Date(all_nba_data$GAME_DATE_EST, format = "%Y-%m-%d")
+
+the_teams_list <- c()
+player_team_list <- function(the_player_name = "James_Harden"){
+  all_nba_data_filtered <- all_nba_data[!all_nba_data[the_player_name] == "Not On Team", ]
+  player_name_df <- all_nba_data_filtered %>% count(nickname)
+  teams <- list(player_name_df$nickname)
+  the_teams_list <- c(the_teams_list, teams)
+  
+  the_teams_list <<- the_teams_list
+}
+
+
+sapply(nba_player_list$PLAYER_NAME_underlined, player_team_list)
+nba_player_list$teams_list <- the_teams_list
+
+nba_player_list <- unnest(nba_player_list, cols = c(teams_list))
+nba_player_list <- nba_player_list[!duplicated(nba_player_list[, c("PLAYER_NAME", "teams_list")]), ]
+
