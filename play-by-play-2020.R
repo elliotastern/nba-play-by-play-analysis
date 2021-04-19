@@ -56,7 +56,6 @@ lineup_df <- distinct(lineup_df, DATE_TEAM_ID, .keep_all = TRUE)
 nba_player_list <- nba_player_box_score_df[, c("PLAYER_NAME", "TEAM_ABBREVIATION")] 
 nba_player_list <- distinct(nba_player_list, PLAYER_NAME, TEAM_ABBREVIATION)
 nba_player_list$PLAYER_NAME_underlined <- gsub(" ", "_", nba_player_list$PLAYER_NAME)
-# View(nba_player_list)
 
 
 
@@ -192,4 +191,110 @@ nba_player_list$teams_list <- the_teams_list
 
 nba_player_list <- unnest(nba_player_list, cols = c(teams_list))
 nba_player_list <- nba_player_list[!duplicated(nba_player_list[, c("PLAYER_NAME", "teams_list")]), ]
+
+
+############################## 
+# 3.1 Get player means
+############################## 
+player_mean_df <- function(player_name = "CJ_McCollum", player_team = "Trail Blazers", player_pos = "SG"){
+  
+  all_nba_data_filtered <- all_nba_data[all_nba_data["nickname"] == player_team, ]
+  
+  # remove rows were player was not on the ream
+  all_nba_data_filtered <- all_nba_data[!all_nba_data[player_name] == "Not On Team", ]
+  all_nba_data_filtered <- all_nba_data[all_nba_data["nickname"] == player_team, ]
+  
+  # split into played and not played
+  play_mean <- all_nba_data_filtered[all_nba_data_filtered[player_name] == "Played", ]
+  not_playing_mean <- all_nba_data_filtered[all_nba_data_filtered[player_name] == "Did Not Play", ]
+  
+  # show games played
+  games_played <- nrow(play_mean)
+  games_out <- nrow(not_playing_mean)
+  
+  
+  # get the means
+  play_means <- play_mean %>%
+    summarise_at(c("Point_Differential", "Points_Scored", "Opp_Points_Scored",
+                   "Assists_Differential", "Assists", "Opp_Assists",
+                   "Rebounds_Differential", "Rebounds", "Opp_Rebounds",
+                   "Field_Goal_Percentage", "Opp_Field_Goal_Percentage",
+                   "Three_Point_Percentage", "Opp_Three_Point_Percentage"), mean, na.rm = TRUE)
+  
+  not_playing_means <- not_playing_mean %>%
+    summarise_at(c("Point_Differential", "Points_Scored", "Opp_Points_Scored",
+                   "Assists_Differential", "Assists", "Opp_Assists",
+                   "Rebounds_Differential", "Rebounds", "Opp_Rebounds",
+                   "Field_Goal_Percentage", "Opp_Field_Goal_Percentage",
+                   "Three_Point_Percentage", "Opp_Three_Point_Percentage"), mean, na.rm = TRUE)  
+  
+  all_means <- bind_rows(play_means, not_playing_means)
+  
+  # Clean column for display
+  colnames(all_means) <-  gsub("_", " ", colnames(all_means)) 
+  # percentage to % to save space
+  colnames(all_means) <-  gsub("Percentage", "%", colnames(all_means)) 
+  
+  all_means[, grepl("%", colnames(all_means))] <- all_means[, grepl("%", colnames(all_means))] * 100
+  
+  all_means_dt <- all_means
+  
+  all_means <- t(all_means)
+  
+  
+  all_means_clean <- data.frame(stat = row.names(all_means),
+                                number = all_means[, 1],
+                                played = "Played")
+  all_means_clean_2 <- data.frame(stat = row.names(all_means),
+                                  number = all_means[, 2],
+                                  played = "Did Not Play")
+  
+  all_means_clean_dif <- left_join(all_means_clean, all_means_clean_2, by = "stat")
+  all_means_clean_dif$difference <- all_means_clean_dif$number.x - all_means_clean_dif$number.y
+  all_means_clean_dif <- all_means_clean_dif[, c("stat", "difference")]
+  
+  all_means_clean <- bind_rows(all_means_clean,
+                               all_means_clean_2)
+  
+  
+  
+  all_means_clean <- left_join(all_means_clean, all_means_clean_dif)
+  
+  
+  # CREATE DIFFERENCE TABLE
+  # get the difference
+  all_means_dt[3, ] <- all_means_dt[1, ] - all_means_dt[2, ]
+  
+  # round the values
+  all_means_dt_rounded <- data.frame(sapply(all_means_dt, round, 2))
+  
+  colnames(all_means_dt_rounded) <-  colnames(all_means_dt)
+  
+  all_means_dt_rounded$type <- c("Played", "Did Not Play", "Difference")
+  
+  all_means_dt_rounded$output_file = paste0("elliotastern.com/NBA/", player_name, "_", player_team, "_Miss_Him-2020.html")
+  all_means_dt_rounded$PLAYER_NAME <- gsub("_", " ", player_name)
+  all_means_dt_rounded$Position <- player_pos
+  
+  
+  #add games played
+  all_means_dt_rounded$games_played <- games_played
+  all_means_dt_rounded$games_out <- games_out
+  all_means_dt_rounded$Team <- player_team
+  
+  mean_df <- bind_rows(mean_df, all_means_dt_rounded)
+  
+  mean_df <<- mean_df
+}
+
+mean_df <- data.frame()
+
+mapply(player_mean_df, nba_player_list$PLAYER_NAME_underlined, nba_player_list$teams_list, nba_player_list$POS)
+
+# filter out small sample sizes
+mean_df$small_sample <- mean_df$games_played < 6 | mean_df$games_out < 6
+
+
+# difference dataframe analysis
+difference_df <- mean_df[mean_df$type == "Difference", ]
 
