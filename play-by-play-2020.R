@@ -298,3 +298,337 @@ mean_df$small_sample <- mean_df$games_played < 6 | mean_df$games_out < 6
 # difference dataframe analysis
 difference_df <- mean_df[mean_df$type == "Difference", ]
 
+############################## 
+# 3 - DATA VIZ
+############################## 
+
+
+#Stephen Curry
+all_nba_data_filtered <- all_nba_data[!all_nba_data[unlist(nba_player_list[1, 3])] == "Not On Team", ]
+
+# all_nba_data_filtered <- all_nba_data[!all_nba_data[unlist(nba_player_list[100, 1])] == "Not On Team", ]
+
+
+
+# final score difference bar chart colored by player playing
+all_nba_data_filtered$Points_Scored
+all_nba_data_filtered$Opp_Points_Scored
+all_nba_data_filtered$Point_Differential
+all_nba_data_filtered$GAME_DATE_EST
+all_nba_data_filtered$Assists
+all_nba_data_filtered$Rebounds
+
+
+played <- all_nba_data_filtered[all_nba_data_filtered$`Stephen_Curry` == "Played", ]
+did_not_play <- all_nba_data_filtered[all_nba_data_filtered$`Stephen_Curry` == "Did Not Play", ]
+
+
+ggplot(all_nba_data_filtered, aes(GAME_DATE_EST, Point_Differential, color = `Stephen_Curry`)) +
+  geom_point()
+
+ggplot(data = all_nba_data_filtered, aes(x = GAME_DATE_EST, y = Point_Differential, color = `Stephen Curry`)) +
+  geom_bar(stat = "identity")
+
+ggplot(data = all_nba_data_filtered, aes(x = GAME_DATE_EST, y = Point_Differential, color = `Stephen Curry`)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = REAL_GAME_ID), fontface = "bold", vjust = 1.5,
+            position = position_dodge(.9), size = 4) +
+  coord_flip()
+
+mean(all_nba_data_filtered$Point_Differential[all_nba_data_filtered$`Stephen Curry` == "Played"])
+mean(all_nba_data_filtered$Point_Differential[all_nba_data_filtered$`Stephen Curry` == "Did Not Play"])
+
+
+ggplot(data = all_nba_data_filtered, aes(x = GAME_DATE_EST, y = Point_Differential, fill = `Stephen Curry`)) +
+  geom_bar(stat = "identity") + 
+  annotate(geom = 'text', size = 3, label = paste(round(mean(did_not_play$Point_Differential), 2), " When Playing"), x = max(all_nba_data_filtered$GAME_DATE_EST) + 10, y = Inf, hjust = 0, vjust = 1) +
+  annotate(geom = 'text', size = 3, label = paste(round(mean(played$Point_Differential), 2), " When Not Playing"), x = max(all_nba_data_filtered$GAME_DATE_EST) + 10, y = Inf, hjust = 0, vjust = 3) +
+  coord_cartesian(xlim = c(min(all_nba_data_filtered$GAME_DATE_EST), max(all_nba_data_filtered$GAME_DATE_EST)), # This focuses the x-axis on the range of interest
+                  clip = 'off') +
+  geom_hline(yintercept = mean(all_nba_data_filtered$Point_Differential[all_nba_data_filtered$`Stephen Curry` == "Played"]), linetype="dashed", 
+             color = color_pallette[2], size= .5) +
+  geom_hline(yintercept = mean(all_nba_data_filtered$Point_Differential[all_nba_data_filtered$`Stephen Curry` == "Did Not Play"]), linetype="dashed", 
+             color = color_pallette[1], size= .5) +
+  theme(text = element_text(family="Roboto")) +
+  labs(title = paste("Stephen Curry:", "Point Differential"), 
+       subtitle = "Miss Me?",
+       y = "Point Differential",
+       x = "Date") +
+  scale_fill_manual(values=c(color_pallette[1], color_pallette[2])) +
+  theme(plot.background = element_rect(colour = 'black', fill = 'black'),
+        line = element_line(colour = "white", size = 0.5, linetype = 1, 
+                            lineend = "butt"), 
+        rect = element_rect(fill = "white", 
+                            colour = "white", size = 0.5, linetype = 1),
+        panel.border = element_rect(fill = NA, colour = "white") 
+  )
+
+
+ggplot(data = all_nba_data_filtered, aes(x = GAME_DATE_EST, y = Point_Differential, fill = `Stephen Curry`)) +
+  geom_bar(stat = "identity") + 
+  annotate(geom = 'text', size = 3, label = paste(round(mean(did_not_play$Point_Differential), 2), " When Playing"), x = max(all_nba_data_filtered$GAME_DATE_EST) + 10, y = Inf, hjust = 0, vjust = 1) +
+  annotate(geom = 'text', size = 3, label = paste(round(mean(played$Point_Differential), 2), " When Not Playing"), x = max(all_nba_data_filtered$GAME_DATE_EST) + 10, y = Inf, hjust = 0, vjust = 3) +
+  coord_cartesian(xlim = c(min(all_nba_data_filtered$GAME_DATE_EST), max(all_nba_data_filtered$GAME_DATE_EST)), # This focuses the x-axis on the range of interest
+                  clip = 'off') +
+  geom_hline(yintercept = mean(all_nba_data_filtered$Point_Differential[all_nba_data_filtered$`Stephen Curry` == "Played"]), linetype="dashed", 
+             color = color_pallette[2], size= .5) +
+  geom_hline(yintercept = mean(all_nba_data_filtered$Point_Differential[all_nba_data_filtered$`Stephen Curry` == "Did Not Play"]), linetype="dashed", 
+             color = color_pallette[1], size= .5) +
+  dark_theme_gray() +
+  theme(text = element_text(family="Roboto"),
+        panel.grid.major = element_line(color = "grey30", size = 0.2),
+        panel.grid.minor = element_line(color = "grey30", size = 0.2)) +
+  labs(title = paste("Stephen Curry:", "Point Differential"), 
+       subtitle = "Miss Me?",
+       y = "Point Differential",
+       x = "Date") +
+  scale_fill_manual(values=c(color_pallette[1], color_pallette[2])) 
+
+
+
+all_nba_data_filtered$`Stephen Curry` <- factor(all_nba_data_filtered$`Stephen Curry`, levels=c("Played", "Did Not Play"))
+
+p <- ggplot(data = all_nba_data_filtered, aes(x = GAME_DATE_EST, y = Point_Differential, fill = `Stephen Curry`, Opponent_Initials = Opponent_Initials, Points_Scored = Points_Scored, Opp_Points_Scored = Opp_Points_Scored)) +
+  geom_bar(stat = "identity", width = .8) + 
+  annotate(geom = 'text', size = 4, label = paste(round(mean(did_not_play$Point_Differential), 2), "Point Differential", "When Not Playing"), x = mean(all_nba_data_filtered$GAME_DATE_EST), y = min(all_nba_data_filtered$Point_Differential), hjust = 0, vjust = 0) +
+  annotate(geom = 'text', size = 4, label = paste(round(mean(played$Point_Differential), 2), "Point Differential", "When Playing"), x = mean(all_nba_data_filtered$GAME_DATE_EST), y = min(all_nba_data_filtered$Point_Differential) + 3, hjust = 0, vjust = 0) +
+  coord_cartesian(xlim = c(min(all_nba_data_filtered$GAME_DATE_EST), max(all_nba_data_filtered$GAME_DATE_EST)), # This focuses the x-axis on the range of interest
+                  clip = 'off') +
+  geom_hline(yintercept = mean(all_nba_data_filtered$Point_Differential[all_nba_data_filtered$`Stephen Curry` == "Played"]), linetype="dashed", 
+             color = color_pallette[2], size= .5) +
+  geom_hline(yintercept = mean(all_nba_data_filtered$Point_Differential[all_nba_data_filtered$`Stephen Curry` == "Did Not Play"]), linetype="dashed", 
+             color = color_pallette[1], size= .5) +
+  dark_theme_gray() +
+  theme(text = element_text(family="Roboto"),
+        panel.grid.major = element_line(color = "grey30", size = 0.2),
+        panel.grid.minor = element_line(color = "grey30", size = 0.2)) +
+  labs(title = paste("Stephen Curry:", "Point Differential"), 
+       subtitle = "Miss Me?",
+       y = "Point Differential",
+       x = "Date",
+       caption = ) +
+  scale_fill_manual(values=c(color_pallette[1], color_pallette[2])) +
+  guides(colour = guide_legend(reverse = T))
+
+ggplotly(p, tooltip = c("Opponent_Initials", "Points_Scored", "Opp_Points_Scored"))
+
+
+
+
+
+
+filtered_gg <- function(the_stat = Point_Differential, tester = Stephen_Curry){
+  tester <- enquo(tester)
+  the_stat <- enquo(the_stat)
+  
+  title_name <- gsub("_", " ", quo_name(tester))
+  title_stat <- gsub("_", " ", quo_name(the_stat))
+  
+  #filter to only games of teams the player was on this season
+  all_nba_data_filtered <- all_nba_data[!all_nba_data[quo_name(tester)] == "Not On Team", ]
+  
+  # change to factor to reorder legend
+  all_nba_data_filtered[quo_name(tester)] <- factor(all_nba_data_filtered[[quo_name(tester)]], levels=c("Played", "Did Not Play"))
+  
+  play_mean <- all_nba_data_filtered[all_nba_data_filtered[quo_name(tester)] == "Played", quo_name(the_stat)]
+  not_playing_mean <- all_nba_data_filtered[all_nba_data_filtered[quo_name(tester)] == "Did Not Play", quo_name(the_stat)]
+  
+  
+  p <- ggplot(data = all_nba_data_filtered, aes(x = GAME_DATE_EST, y = !! the_stat, fill = !! tester, Opponent_Initials = Opponent_Initials, Points_Scored = Points_Scored, Opp_Points_Scored = Opp_Points_Scored)) +
+    geom_bar(stat = "identity", width = .8) +
+    # Change to dark theme
+    dark_theme_gray() +
+    theme(text = element_text(family="Roboto"),
+          panel.grid.major = element_line(color = "grey30", size = 0.2),
+          panel.grid.minor = element_line(color = "grey30", size = 0.2)) +
+    # Change titles
+    labs(title = paste("Miss Me?", title_name, ":", title_stat),
+         y = quo_name(the_stat),
+         x = "Date",
+         fill = title_name) +
+    # Change colors
+    scale_fill_manual(values=c(color_pallette[1], color_pallette[2])) +
+    # Remove Excess X-Axis 
+    coord_cartesian(xlim = c(min(all_nba_data_filtered$GAME_DATE_EST), max(all_nba_data_filtered$GAME_DATE_EST)), # This focuses the x-axis on the range of interest
+                    clip = 'off') +
+    geom_hline(yintercept = mean(unlist(play_mean)), linetype="dashed", 
+               color = color_pallette[2], size= .5) +
+    geom_hline(yintercept = mean(unlist(not_playing_mean)), linetype="dashed", 
+               color = color_pallette[1], size= .5) +
+    annotate(geom = 'text', size = 4, label = paste(round(mean(unlist(play_mean)), 2), title_stat, "When Playing"), x = mean(all_nba_data_filtered$GAME_DATE_EST), y = max(all_nba_data_filtered[[quo_name(the_stat)]]) * 1.06, hjust = 0, vjust = 0) +
+    annotate(geom = 'text', size = 4, label = paste(round(mean(unlist(not_playing_mean)), 2), title_stat, "When Not Playing"), x = mean(all_nba_data_filtered$GAME_DATE_EST), y = max(all_nba_data_filtered[[quo_name(the_stat)]]) * 1.04 - 2, hjust = 0, vjust = 0) 
+  
+  
+  
+  ggplotly(p, tooltip = c("Opponent_Initials", "Points_Scored", "Opp_Points_Scored"))
+  
+}
+
+filtered_gg(the_stat = Point_Differential)
+filtered_gg(the_stat = Points_Scored)
+filtered_gg(the_stat = Opp_Points_Scored)
+filtered_gg(the_stat = Assists_Differential)
+filtered_gg(the_stat = Assists)
+filtered_gg(the_stat = Opp_Assists)
+filtered_gg(the_stat = Rebounds_Differential)
+filtered_gg(the_stat = Rebounds)
+filtered_gg(the_stat = Opp_Rebounds)
+
+
+stat_vector <- c("Point_Differential", "Points_Scored", "Opp_Points_Scored",
+                 "Assists_Differential", "Assists", "Opp_Assists",
+                 "Rebounds_Differential", "Rebounds", "Opp_Rebounds")
+
+nba_player_list$PLAYER_NAME_underlined
+
+all_graphs <- expand.grid(stat_vector, nba_player_list$PLAYER_NAME_underlined)
+
+
+p <- ggplot(data = all_nba_data_filtered, aes(x = GAME_DATE_EST, y = Point_Differential, fill = Eric_Paschall, Opponent_Initials = Opponent_Initials, Points_Scored = Points_Scored, Opp_Points_Scored = Opp_Points_Scored)) +
+  geom_bar(stat = "identity", width = .8) #+
+# annotate(geom = 'text', size = 3, label = paste(round(mean(did_not_play$Point_Differential), 2), " When Playing"), x = max(all_nba_data_filtered$GAME_DATE_EST) + 10, y = Inf, hjust = 0, vjust = 1) +
+# annotate(geom = 'text', size = 3, label = paste(round(mean(played$Point_Differential), 2), " When Not Playing"), x = max(all_nba_data_filtered$GAME_DATE_EST) + 10, y = Inf, hjust = 0, vjust = 3) 
+# 
+ggplotly(p, tooltip = c("Opponent_Initials", "Points_Scored", "Opp_Points_Scored"))
+
+
+
+
+filtered_gg <- function(the_stat = "Point_Differential", z = 2, tester = "Eric_Paschall"){
+  # played <- all_nba_data_filtered[all_nba_data_filtered[[tester]] == "Played", ]
+  
+  
+  # all_nba_data_filtered <- all_nba_data[!all_nba_data[unlist(nba_player_list[z, 1])] == "Not On Team", ]
+  # graph_player <- unlist(nba_player_list[z, 1])
+  tester <- rlang::sym(tester)
+  the_stat <- rlang::sym(the_stat)
+  # print(tester)
+  # print(quo(tester))
+  # did_not_play <- all_nba_data_filtered[all_nba_data_filtered[[!! tester]] == "Did Not Play", ]
+  # 
+  # ggp <- ggplot(data = all_nba_data_filtered,
+  #               aes(x = !! x.var,
+  #                   y = !! the_stat)) +
+  #   geom_point()
+  # 
+  # return(ggp)
+  
+  
+  p <- ggplot(data = all_nba_data_filtered, aes(x = GAME_DATE_EST, y = !! the_stat, fill = !! tester, Opponent_Initials = Opponent_Initials, Points_Scored = Points_Scored, Opp_Points_Scored = Opp_Points_Scored)) +
+    geom_bar(stat = "identity", width = .8) #+
+  # annotate(geom = 'text', size = 3, label = paste(round(mean(did_not_play$Point_Differential), 2), " When Playing"), x = max(all_nba_data_filtered$GAME_DATE_EST) + 10, y = Inf, hjust = 0, vjust = 1) +
+  # annotate(geom = 'text', size = 3, label = paste(round(mean(played$Point_Differential), 2), " When Not Playing"), x = max(all_nba_data_filtered$GAME_DATE_EST) + 10, y = Inf, hjust = 0, vjust = 3) 
+  # 
+  # ggplotly(p, tooltip = c("Opponent_Initials", "Points_Scored", "Opp_Points_Scored"))
+  
+  # ggplot(data = all_nba_data_filtered, aes(x = GAME_DATE_EST, y = Point_Differential, fill = Eric_Paschall, Opponent_Initials = Opponent_Initials, Points_Scored = Points_Scored, Opp_Points_Scored = Opp_Points_Scored)) +
+  #  geom_bar(stat = "identity", width = .8) 
+  # ggplot(data = all_nba_data_filtered, aes(x = GAME_DATE_EST, y = Point_Differential, fill = Eric_Paschall, Opponent_Initials = Opponent_Initials, Points_Scored = Points_Scored, Opp_Points_Scored = Opp_Points_Scored)) +
+  #  geom_bar(stat = "identity", width = .8)
+  
+  
+  # p <- ggplot(data = all_nba_data_filtered, aes(x = GAME_DATE_EST, y = Point_Differential, fill = `Stephen Curry`, Opponent_Initials = Opponent_Initials, Points_Scored = Points_Scored, Opp_Points_Scored = Opp_Points_Scored)) +
+  #   geom_bar(stat = "identity", width = .8) + 
+  #   annotate(geom = 'text', size = 3, label = paste(round(mean(did_not_play$Point_Differential), 2), " When Playing"), x = max(all_nba_data_filtered$GAME_DATE_EST) + 10, y = Inf, hjust = 0, vjust = 1) +
+  #   annotate(geom = 'text', size = 3, label = paste(round(mean(played$Point_Differential), 2), " When Not Playing"), x = max(all_nba_data_filtered$GAME_DATE_EST) + 10, y = Inf, hjust = 0, vjust = 3) +
+  #   coord_cartesian(xlim = c(min(all_nba_data_filtered$GAME_DATE_EST), max(all_nba_data_filtered$GAME_DATE_EST)), # This focuses the x-axis on the range of interest
+  #                   clip = 'off') +
+  #   geom_hline(yintercept = mean(all_nba_data_filtered$Point_Differential[all_nba_data_filtered$`Stephen Curry` == "Played"]), linetype="dashed", 
+  #              color = color_pallette[2], size=.5) +
+  #   geom_hline(yintercept = mean(all_nba_data_filtered$Point_Differential[all_nba_data_filtered$`Stephen Curry` == "Did Not Play"]), linetype="dashed", 
+  #              color = color_pallette[1], size=.5) +
+  #   dark_theme_gray() +
+  #   theme(text = element_text(family="Roboto"),
+  #         panel.grid.major = element_line(color = "grey30", size = 0.2),
+  #         panel.grid.minor = element_line(color = "grey30", size = 0.2)) +
+  #   labs(title = paste("Stephen Curry:", "Point Differential"), 
+  #        subtitle = "Miss Me?",
+  #        y = "Point Differential",
+  #        x = "Date") +
+  #   scale_fill_manual(values=c(color_pallette[1], color_pallette[2])) 
+  # 
+  # ggplotly(p, tooltip = c("Opponent_Initials", "Points_Scored", "Opp_Points_Scored"))
+  
+  
+}
+
+
+
+filtered_gg(the_stat = Point_Differential)
+filtered_gg(the_stat = Points_Scored)
+filtered_gg(the_stat = Opp_Points_Scored)
+filtered_gg(the_stat = Assists)
+filtered_gg(the_stat = Opp_Assists)
+filtered_gg(the_stat = Rebounds)
+filtered_gg(the_stat = Opp_Rebounds)
+
+
+
+p <- ggplot(data = all_nba_data_filtered, aes(x = GAME_DATE_EST, y = Point_Differential, fill = `Stephen Curry`, Opponent_Initials = Opponent_Initials, Points_Scored = Points_Scored, Opp_Points_Scored = Opp_Points_Scored)) +
+  geom_bar(stat = "identity", width = .8) + 
+  annotate(geom = 'text', size = 3, label = paste(round(mean(did_not_play$Point_Differential), 2), " When Playing"), x = max(all_nba_data_filtered$GAME_DATE_EST) + 10, y = Inf, hjust = 0, vjust = 1) +
+  annotate(geom = 'text', size = 3, label = paste(round(mean(played$Point_Differential), 2), " When Not Playing"), x = max(all_nba_data_filtered$GAME_DATE_EST) + 10, y = Inf, hjust = 0, vjust = 3) +
+  coord_cartesian(xlim = c(min(all_nba_data_filtered$GAME_DATE_EST), max(all_nba_data_filtered$GAME_DATE_EST)), # This focuses the x-axis on the range of interest
+                  clip = 'off') +
+  geom_hline(yintercept = mean(all_nba_data_filtered$Point_Differential[all_nba_data_filtered$`Stephen Curry` == "Played"]), linetype="dashed", 
+             color = color_pallette[2], size=.5) +
+  geom_hline(yintercept = mean(all_nba_data_filtered$Point_Differential[all_nba_data_filtered$`Stephen Curry` == "Did Not Play"]), linetype="dashed", 
+             color = color_pallette[1], size=.5) +
+  dark_theme_gray() +
+  theme(text = element_text(family="Roboto"),
+        panel.grid.major = element_line(color = "grey30", size = 0.2),
+        panel.grid.minor = element_line(color = "grey30", size = 0.2)) +
+  labs(title = paste("Stephen Curry:", "Point Differential"), 
+       subtitle = "Miss Me?",
+       y = "Point Differential",
+       x = "Date") +
+  scale_fill_manual(values=c(color_pallette[1], color_pallette[2])) 
+
+ggplotly(p, tooltip = c("Opponent_Initials", "Points_Scored", "Opp_Points_Scored"))
+
+
+
+
+
+# fig <- fig %>%
+#    layout(title = 'AAPL High')
+
+
+
+
+ggplot(data = all_nba_data_filtered, aes(x = GAME_DATE_EST, y = Assists, fill = `Stephen Curry`)) +
+  geom_bar(stat = "identity") + 
+  annotate(geom = 'text', size = 3, label = paste(round(mean(all_nba_data_filtered$Assists[all_nba_data_filtered$`Stephen Curry` == "Played"]), 2), " When Playing"), x = max(all_nba_data_filtered$GAME_DATE_EST) + 10, y = Inf, hjust = 0, vjust = 1) +
+  annotate(geom = 'text', size = 3, label = paste(round(mean(all_nba_data_filtered$Assists[all_nba_data_filtered$`Stephen Curry` == "Did Not Play"]), 2), " When Not Playing"), x = max(all_nba_data_filtered$GAME_DATE_EST) + 10, y = Inf, hjust = 0, vjust = 3) +
+  coord_cartesian(xlim = c(min(all_nba_data_filtered$GAME_DATE_EST), max(all_nba_data_filtered$GAME_DATE_EST)), # This focuses the x-axis on the range of interest
+                  clip = 'off')
+
+
+
+ggplot(data = all_nba_data_filtered, aes(x = GAME_DATE_EST, y = Rebounds, color = `Stephen Curry`)) +
+  geom_bar(stat = "identity") 
+mean(all_nba_data_filtered$Rebounds[all_nba_data_filtered$`Stephen Curry` == "Played"])
+mean(all_nba_data_filtered$Rebounds[all_nba_data_filtered$`Stephen Curry` == "Did Not Play"])
+
+ggplot(data = all_nba_data_filtered, aes(x = GAME_DATE_EST, y = Points_Scored, color = `Stephen Curry`)) +
+  geom_bar(stat = "identity") 
+mean(all_nba_data_filtered$Points_Scored[all_nba_data_filtered$`Stephen Curry` == "Played"])
+mean(all_nba_data_filtered$Points_Scored[all_nba_data_filtered$`Stephen Curry` == "Did Not Play"])
+
+ggplot(data = all_nba_data_filtered, aes(x = GAME_DATE_EST, y = Opp_Points_Scored, color = `Stephen Curry`)) +
+  geom_bar(stat = "identity") 
+mean(all_nba_data_filtered$Opp_Points_Scored[all_nba_data_filtered$`Stephen Curry` == "Played"])
+mean(all_nba_data_filtered$Opp_Points_Scored[all_nba_data_filtered$`Stephen Curry` == "Did Not Play"])
+
+ggplot(data = all_nba_data_filtered, aes(x = GAME_DATE_EST, y = Field_Goal_Percentage, color = `Stephen Curry`)) +
+  geom_bar(stat = "identity") 
+mean(all_nba_data_filtered$Field_Goal_Percentage[all_nba_data_filtered$`Stephen Curry` == "Played"])
+mean(all_nba_data_filtered$Field_Goal_Percentage[all_nba_data_filtered$`Stephen Curry` == "Did Not Play"])
+
+ggplot(data = all_nba_data_filtered, aes(x = GAME_DATE_EST, y = Opp_Field_Goal_Percentage, color = `Stephen Curry`)) +
+  geom_bar(stat = "identity") 
+mean(all_nba_data_filtered$Opp_Field_Goal_Percentage[all_nba_data_filtered$`Stephen Curry` == "Played"])
+mean(all_nba_data_filtered$Opp_Field_Goal_Percentage[all_nba_data_filtered$`Stephen Curry` == "Did Not Play"])
+
+
+
